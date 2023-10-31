@@ -1,0 +1,53 @@
+.tabela {
+    background-color: white;
+    border: 2px solid green;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.conteudo-celula {
+    height: 400px;
+    overflow: auto;
+}
+
+#img_lixo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 40px auto 40px;
+}
+
+#texto {
+    font-size: 25px;
+    font-family: Candara;
+    margin: 20px 0;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 150px;
+    font-family: Arial, sans-serif;
+    margin: 120px 0 1px;
+}
+
+.conteudoIMG {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.linha-titulo {
+    border: 2px solid black;
+    margin: 10px 0;
+    width: 30%;
+}
+
+.linha-menor {
+    border: 2px solid black;
+    margin: 10px 0;
+    width: 20%;
+}
