@@ -1,0 +1,165 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-shadow: inset 0px 0px 500px rgba(0, 255, 127);
+}
+
+form {
+    text-align: center;
+}
+
+.styled-table {
+    width: 500px;
+    height: 300px;
+    background-color: #00FF7F;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    table-layout: fixed;
+    position: relative;
+    z-index: 3;
+    border: 10px solid #f0f0f0;
+    margin: 20px auto 0;
+    top: 80px;
+    text-align: center; /* Adiciona esta propriedade para centralizar conteúdo horizontalmente */
+}
+
+.container {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 15px solid #f0f0f0;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#profile-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://s2.glbimg.com/SFb_NuS-zQWCDGYqe87uaOIWSRM=/e.glbimg.com/og/ed/f/original/2022/02/01/niko-photos-tgtvxeor_rs-unsplash_HlsBODM.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+    z-index: 1;
+    filter: blur(10px);
+}
+
+#pencil-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-container {
+    text-align: center; /* Adiciona esta propriedade para centralizar todos os botões */
+    margin-top: 20px;
+}
+
+#editarBtn,
+#salvarBtn,
+#cancelarBtn,
+.square-button {
+    background-color: #008000;
+    color: #fff;
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block; /* Adiciona esta propriedade para manter os botões em linha */
+    margin: 0 5px; /* Adiciona margem entre os botões se necessário */
+}
+
+.centered-button:hover,
+#editarBtn:hover,
+#salvarBtn:hover,
+#cancelarBtn:hover {
+    background-color: #00FF7F;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.white-icon {
+    color: #fff;
+}
+
+.square-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 0 #fff;
+}
+
+#pencil-button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0px;
+}
+
+.square-button:hover {
+    box-shadow: 0 0 15px 0 #fff;
+}
+
+.circle:hover #pencil-button {
+    opacity: 1;
+}
+
+#salvarBtn,
+#cancelarBtn {
+    display: none;
+}
+

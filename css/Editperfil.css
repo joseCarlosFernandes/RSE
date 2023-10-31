@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-shadow: inset 0px 0px 500px rgba(0, 255, 127);
+}
+
+form {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.styled-table {
+    width: 500px; /* Largura fixa da tabela */
+    height: 300px; /* Altura fixa da tabela */
+    background-color: #00FF7F;
+    border-radius: 10px;
+    padding: 20px; /* Reduzi o padding para evitar que a tabela fique muito alta */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    table-layout: fixed; /* Evita que a tabela se ajuste automaticamente ao conteúdo */
+}
+
+.circle {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 5px solid #f0f0f0;
+    border-radius: 50%;
+}
+
+#profile-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#pencil-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Defina a cor do ícone como branca */
+}
+
+.centered-button {
+    display: block;
+    margin: 0 auto; /* Centraliza horizontalmente os botões */
+    padding: 10px 20px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.centered-button:hover {
+    background-color: #00FF7F;
+}
+
+.save-button,
+.cancel-button {
+    display: block;
+    margin: 20px auto 0; /* Adicione margem superior para centralizar verticalmente abaixo da tabela */
+    padding: 10px 20px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover,
+.cancel-button:hover {
+    background-color: #00FF7F;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px; /* Adicione margem superior para separar os botões da tabela */
+}
+
+.save-cancel-container {
+    display: inline-block;
+    vertical-align: middle; /* Alinha verticalmente o container em relação à tabela */
+    margin-left: 10px; /* Espaçamento entre os botões */
+}
+
+.white-icon {
+    color: #fff; /* Define a cor do ícone como branca */
+}
+
+.square-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Adicionei um estilo para ocultar os botões "Salvar" e "Cancelar" inicialmente */
+#salvarBtn, #cancelarBtn {
+    display: none;
+}
